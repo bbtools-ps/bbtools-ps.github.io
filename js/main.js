@@ -4,8 +4,8 @@
 
 // Function that fixes runts from the string (paragraph). It replaces the last whitespace character with the &nbsp; (non-breaking space character)
 function fixRunts(str) {
-    // If string starts with < (tag) then just return it
-    if (str[0] !== "<") {
+    // If string has any html tags inside then just return it
+    if (!str.match(/\<[a-z]+/)) {
         return str.replace(/\s+(\S+)$/gim, `&nbsp;$1`);
     } else {
         return str;
