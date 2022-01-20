@@ -18,198 +18,216 @@ font-family: 'Roboto', sans-serif;
 --------------------------------*/
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #BFD7EA;
-    background: #094074 url('../images/about_bg.jpg') no-repeat center / cover fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #bfd7ea;
+  background: #094074 url("../images/about_bg.jpg") no-repeat center / cover
+    fixed;
 }
 
 .wrapper {
-    background: linear-gradient(180deg, rgba(9, 64, 116, 0.8) 0%, rgba(4, 31, 57, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 64, 116, 0.8) 0%,
+    rgba(4, 31, 57, 1) 100%
+  );
 }
 
 .content-wrap {
-    max-width: 800px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 3rem 0;
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
 
-h1, h2, h3 {
-    font-family: 'Lora', serif;
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
 }
 
 h1 {
-    font-size: 5rem;
-    line-height: 1;
+  font-size: 5rem;
+  line-height: 1;
 }
 
 h2 {
-    font: 2.5rem;
+  font: 2.5rem;
 }
 
 h3 {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 a {
-    color: #FCF6B1;
-    display: inline-block;
+  color: #fcf6b1;
+  display: inline-block;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.job-item, .project-item {
-    border-bottom: 1px dashed #0A8754;
-    padding-bottom: 1rem;
+.job-item,
+.project-item {
+  border-bottom: 1px dashed #0a8754;
+  padding-bottom: 1rem;
 }
 
-.item-details h3+p {
-    font-style: italic;
+.item-details h3 + p {
+  font-style: italic;
 }
 
-.item-details h3~p {
-    margin: 0;
+.item-details h3 ~ p {
+  margin: 0;
 }
 
 /* Projects / Portfolio
 --------------------------------*/
 
 .project-item h3 {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
-.project-item h3+a {
-    border: 4px solid #0A8754;
-    line-height: 0;
-    max-width: 358px;
-    max-height: 282px;
+.project-item h3 + a {
+  border: 4px solid #0a8754;
+  line-height: 0;
+  max-width: 358px;
+  max-height: 282px;
 }
 
-.project-item h3+a:hover {
-    border: 4px solid #10D183;
-    transition: 0.3s;
+.project-item h3 + a:hover {
+  border: 4px solid #10d183;
+  transition: 0.3s;
 }
 
-.project-item h3+a img {
-    max-width: 350px;
-    max-height: 274px;
+.project-item h3 + a img {
+  max-width: 350px;
+  max-height: 274px;
 }
 
 .projects .btn {
-    color: #094074;
-    background-color: #F58A07;
-    padding: .7rem;
-    text-decoration: none;
-    border-radius: 4px;
-    display: inline-block;
-    transition: 0.3s;
+  color: #094074;
+  background-color: #f58a07;
+  padding: 0.7rem;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .projects .btn:hover {
-    background-color: #FAB561;
+  background-color: #fab561;
 }
 
 .project-description p:first-of-type {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* Work Experience
 --------------------------------*/
 
 .job-summary a {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /* Contact / Social media
 --------------------------------*/
 
 footer ul {
-    list-style: none;
+  list-style: none;
 }
 
 footer ul {
-    padding: 0;
+  padding: 0;
 }
 
 footer a {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 footer a::before {
-    content: "";
-    display: inline-block;
-    height: 1rem;
-    width: 1rem;
-    margin-right: .5rem;
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
 }
 
 .email-icon::before {
-    background: url("../icons/envelope.svg") no-repeat;
+  background: url("../icons/envelope.svg") no-repeat;
 }
 
 .behance-icon::before {
-    background: url("../icons/behance-square.svg") no-repeat;
+  background: url("../icons/behance-square.svg") no-repeat;
 }
 
 .linkedin-icon::before {
-    background: url("../icons/linkedin.svg") no-repeat;
+  background: url("../icons/linkedin.svg") no-repeat;
 }
 
 .youtube-icon::before {
-    background: url("../icons/youtube-square.svg") no-repeat;
+  background: url("../icons/youtube-square.svg") no-repeat;
 }
 
 .github-icon::before {
-    background: url("../icons/github-square.svg") no-repeat;
+  background: url("../icons/github-square.svg") no-repeat;
 }
 
 /* Responsive
 ------------------------------------*/
 
 @media screen and (min-width: 760px) {
-    header, footer {
-        text-align: center;
-    }
-    p {
-        text-align: left;
-    }
-    .job-item, .project-item {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        gap: 1.5rem;
-    }
-    .job-item a {
-        margin-left: 1.2rem;
-    }
-    footer ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
+  header,
+  footer {
+    text-align: center;
+  }
+  p {
+    text-align: left;
+  }
+  .job-item,
+  .project-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1.5rem;
+  }
+  .job-item a {
+    margin-left: 1.2rem;
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 759px) {
-    h1 {
-        font-size: 3.2rem;
-    }
-    .content-wrap {
-        padding: 1.2rem 0;
-    }
-    footer a {
-        padding: .2rem;
-    }
+  h1 {
+    font-size: 3.2rem;
+  }
+  .content-wrap {
+    padding: 1.2rem 0;
+  }
+  footer a {
+    padding: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .project-item h3 + a img {
+    width: 100%;
+  }
 }
