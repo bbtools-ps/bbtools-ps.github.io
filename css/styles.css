@@ -77,6 +77,11 @@ a {
   display: inline-block;
 }
 
+h3 a {
+  text-decoration: none;
+  color: #bfd7ea;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -167,24 +172,8 @@ footer a::before {
   margin-right: 0.5rem;
 }
 
-.email-icon::before {
-  background: url("../icons/envelope.svg") no-repeat;
-}
-
-.behance-icon::before {
-  background: url("../icons/behance-square.svg") no-repeat;
-}
-
-.linkedin-icon::before {
-  background: url("../icons/linkedin.svg") no-repeat;
-}
-
-.youtube-icon::before {
-  background: url("../icons/youtube-square.svg") no-repeat;
-}
-
-.github-icon::before {
-  background: url("../icons/github-square.svg") no-repeat;
+footer a i {
+  margin-right: 0.5rem;
 }
 
 /* Responsive
